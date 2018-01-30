@@ -1,0 +1,23 @@
+int termVar = 10;
+
+for ( int myDumbVar == 0, termVar > dumbVar )
+{
+	cayyout("Cayya Language");
+	myDumbVar = myDumbVar + 1;
+}
+
+float a = 1.0;
+float b = -2.2;
+
+int c = -4;
+int d = +2;
+
+boolean ac = a < c;
+boolean cd = a == d;
+boolean taken;
+
+cayyin(taken);
+
+boolean result = taken && ac;
+
+cayyout(result);

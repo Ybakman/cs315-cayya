@@ -1,0 +1,26 @@
+boolean a = true;
+boolean b = false;
+boolean ~c = false;
+
+boolean result;
+
+result = a && b;
+
+cayyout(result);
+
+result = r | ~c;
+
+cayyout(result);
+
+r = a == b;
+r = a =>b;
+r = ~c <==> a;
+r = a > b;
+r = a >= b;
+r = a <= b;
+r = a ==> b
+
+cayyout( a->b)
+
+cayyin(a)
+

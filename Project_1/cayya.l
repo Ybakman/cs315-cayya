@@ -1,0 +1,113 @@
+ASSIGNMENTOP =
+NEWLINE \n
+INT_TYPE int
+CHAR_TYPE char
+BOOLEAN_TYPE boolean
+STRING_TYPE string
+FLOAT_TYPE float
+EQUIVALENCECHECK ==
+COMMENT {HASHTAG}([^\n])*\n
+HASHTAG #
+AND \&\&
+OR \|\|
+ELSE else
+NOT '|!
+CONSTANTIDENTIFIER ~
+IMPLIES ->
+EQUIVALENCE ==>
+IFF <==>
+LT <
+GT >
+LTE <=
+GTE >=
+LP \(
+RP \)
+LB \{
+RB \}
+LSB \[
+RSB \]
+COMMA ,
+ENDSTMT \;
+UNDERSCORE _
+DOT \.
+DIGIT [0-9]
+LETTER[a-zA-Z]
+IF if
+DO do
+WHILE while
+FOR for
+RUN run
+RETURN return
+CAYYOUT cayyout
+CAYYIN cayyin
+TRUE true|1
+FALSE false|0
+DONTCARE X|Don'tCare
+BOOLEAN TRUE|FALSE|DONTCARE
+INT [+-]?({DIGIT})+
+FLOAT ({INT})*(\.({DIGIT})+|({DIGIT})+\.)({DIGIT})*
+CHAR \'[^\\\']\'
+STRING \"([^\\\"]|\\\"|\\\n|\\\\)*\"
+IDENTIFIER {LETTER}({LETTER}|{DIGIT}|{UNDERSCORE})*
+CONSTANT {CONSTANTIDENTIFIER}{IDENTIFIER}
+%%
+{ASSIGNMENTOP} printf("<ASSIGNMENTOP>");
+{EQUIVALENCECHECK} printf("<EQUIVALENCECHECK>");
+{HASHTAG} printf("<HASHTAG>");
+{AND} printf("<AND>");
+{OR} printf("<OR>");
+{ELSE} printf("<ELSE>");
+{IMPLIES} printf("<IMPLIES>");
+{EQUIVALENCE} printf("<EQUIVALENCE>");
+{IFF} printf("<IFF>");
+{LP} printf("<LP>");
+{RP} printf("<RP>");
+{LB} printf("<LB>");
+{RB} printf("<RB>");
+{LSB} printf("<LSB>");
+{RSB} printf("<RSB>");
+{LT} printf("<LT>");
+{GT} printf("<GT>");
+{LTE} printf("<LTE>");
+{GTE} printf("<GTE>");
+{COMMA} printf("<COMMA>");
+{DOT} printf("<DOT>");
+{FLOAT} printf("<FLOAT>");
+{DIGIT} printf("<DIGIT>");
+{INT} printf("<INT>");
+{INT_TYPE} printf("<INT_TYPE>");
+{CHAR_TYPE} printf("<CHAR_TYPE>");
+{BOOLEAN_TYPE} printf("<BOOLEAN_TYPE>");
+{STRING_TYPE} printf("<STRING_TYPE>");
+{FLOAT_TYPE} printf("<FLOAT_TYPE>");
+{NEWLINE} printf("<NEWLINE>\n");
+{IF} printf("<IF>");
+{DO} printf("<DO>");
+{WHILE} printf("<WHILE>");
+{FOR} printf("<FOR>");
+{TRUE} printf("<TRUE>");
+{FALSE} printf("<FAlSE>");
+{DONTCARE} printf("<DONTCARE>");
+{BOOLEAN} printf("<BOOLEAN>");
+{CHAR} printf("<CHAR>");
+{RUN} printf("<RUN>");
+{RETURN} printf("<RETURN>");
+{CAYYOUT} printf("<CAYYOUT>");
+{CAYYIN} printf("<CAYYIN>");
+{STRING} printf("<STRING>");
+{IDENTIFIER} printf("<IDENTIFIER>");
+{CONSTANTIDENTIFIER} printf("<CONSTANTIDENTIFIER>");
+{CONSTANT} printf("<CONSTANT>");
+{COMMENT} printf("<COMMENT>");
+{ENDSTMT} printf("<ENDSTMT>\n");
+{UNDERSCORE} printf("<UNDERSCORE>");
+
+%%
+int yywrap(void) {
+	return 1;
+}
+
+int main(void) {
+	yylex();
+	return 0;
+}

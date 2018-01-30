@@ -1,0 +1,24 @@
+#This is a string declaration & init
+string a = "My Name is cayya";
+#This is a char declaration & init
+char b = 'c';
+int first = 4;
+int second;
+cayyin(second);
+if( first == second){
+	cayyout(first);
+}
+else{
+	cayyout(second);
+}
+dumbPredicate( boolean x, boolean y){
+	boolean result = a <==> b;
+	return result;
+}
+boolean f= true;
+boolean s = false;
+boolean dumb = dontcare;
+boolean result = (run dumbPredicate(f,s)); 
+do{
+	cayyout(f);
+}while( result == false);
