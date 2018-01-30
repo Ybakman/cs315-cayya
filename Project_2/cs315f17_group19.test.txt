@@ -1,0 +1,66 @@
+
+$foo(var x, ~s){
+	return x&& ~s;
+}
+$moo(var x, var y){
+	while( x && y){
+	 x = x ->y;
+	}
+	return (x);
+}
+
+main(){
+var x = false;
+var y;
+~y("Man is Mortal") = false;
+y = true;
+while((x||d) && (c) || false <==> true){ return false;}
+
+#this is a comment
+#constant def
+~e("Man is Mortal") = true;
+
+#constant def 2
+~fact("This is a good project") = true;
+
+var x = run $foo(y);
+y = run $goo(h);
+#declaring an array
+var @imm;
+
+@imm = { false, false, true, true, false};
+@imm[2] = false <==> true;
+
+var @arr = { x, false, y };
+@arr[4] = true;
+
+if( ((x|| y)->i) && !!!!!!!m)
+	var m = dontcare;
+else
+	var b = false;
+#cheking while
+#X is dontcare
+while( a && X){
+	var m = false;
+}
+
+var dontCareVar = X;
+
+do{
+	run $foo( a, b);
+}while( a^b);
+
+for( var x = true;
+ a || b){
+	a = !b;
+}
+
+cayyin(b);
+
+cayyout( a&&b);
+}
+
+
+
+
+
