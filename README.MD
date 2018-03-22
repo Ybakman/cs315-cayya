@@ -3,7 +3,7 @@
 * Includes complete BNF description and lexical analyzer of Cayya language.
 * Implemented in C.
 ## Project 2
-* Includdes complete BNF description and parse of Cayya language.
+* Includdes complete BNF description and parser of Cayya language.
 * Impelemented in C.
 ## Grades 
 * Project 1: 93/100
